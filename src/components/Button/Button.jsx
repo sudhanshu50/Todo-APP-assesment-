@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 const Button = ({ text, color, bgCol, clickHandler }) => {
   return (
     <button
@@ -6,6 +7,7 @@ const Button = ({ text, color, bgCol, clickHandler }) => {
         backgroundColor: bgCol,
         margin: "0px 5px",
         borderRadius: "5px",
+        cursor: "pointer",
       }}
       onClick={clickHandler}
     >

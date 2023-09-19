@@ -1,4 +1,5 @@
-const Input = ({ type, check, changeHandler, value }) => {
+/* eslint-disable react/prop-types */
+const Input = ({ type, check, changeHandler, value, style }) => {
   return (
     <input
       type={type}
@@ -6,6 +7,7 @@ const Input = ({ type, check, changeHandler, value }) => {
       onChange={changeHandler}
       value={value}
       placeholder="Enter here..."
+      style={style}
     />
   );
 };
